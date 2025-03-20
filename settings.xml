@@ -1,0 +1,33 @@
+<settings>
+<servers>
+  <server>
+    <id>jessiecloudops-project1-project1-devops-cicd</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+
+<profiles>
+  <profile>
+    <id>jessiecloudops-project1-project1-devops-cicd</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>jessiecloudops-project1-project1-devops-cicd</id>
+        <url>https://jessiecloudops-project1-160885276799.d.codeartifact.eu-north-1.amazonaws.com/maven/project1-devops-cicd/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+
+<mirrors>
+  <mirror>
+    <id>jessiecloudops-project1-project1-devops-cicd</id>
+    <name>jessiecloudops-project1-project1-devops-cicd</name>
+    <url>https://jessiecloudops-project1-160885276799.d.codeartifact.eu-north-1.amazonaws.com/maven/project1-devops-cicd/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
